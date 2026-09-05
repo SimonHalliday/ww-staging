@@ -1,0 +1,13 @@
+# Main navigation. Order here is the order on screen.
+- name: Services
+  url: /#services
+- name: Equipment
+  url: /equipment/
+- name: About
+  url: /#about
+- name: Case Studies
+  url: /case-studies/
+- name: Credits
+  url: /#credits
+- name: Contact
+  url: /#contact

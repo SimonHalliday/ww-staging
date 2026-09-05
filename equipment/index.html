@@ -1,0 +1,29 @@
+---
+layout: default
+title: Equipment & Capability
+description: Wireless video, IP mesh, antennas, aerial systems and custom-built RF hardware — owned, maintained and built in-house by Wireless Wizards.
+---
+<div class="section">
+  <div class="section-header">
+    <div class="section-eyebrow">Capability</div>
+    <h1 class="section-title">Equipment &amp; Capability</h1>
+    <p class="section-desc">Owned, maintained and built in-house. We spec the system around the production &mdash; not the other way round.</p>
+  </div>
+
+  <div class="equip-grid">
+    {%- for cat in site.data.categories %}
+    {%- assign n = site.equipment | where: "category", cat.slug | where_exp: "i", "i.draft != true" | size %}
+    <a class="equip-card" href="{{ '/equipment/' | append: cat.slug | append: '/' | relative_url }}">
+      <div class="equip-head">
+        <span class="equip-num">{{ forloop.index0 | plus: 1 | prepend: '0' | slice: -2, 2 }} //</span>
+        <div class="equip-name">{{ cat.name }}</div>
+      </div>
+      <div class="equip-desc">{{ cat.summary }}</div>
+      <ul class="equip-list">
+        {%- for p in cat.points %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+      <div class="equip-more">{% if n > 0 %}{{ n }} item{% if n != 1 %}s{% endif %} listed{% else %}View category{% endif %} &rarr;</div>
+    </a>
+    {%- endfor %}
+  </div>
+</div>

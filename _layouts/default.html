@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+{%- include head.html %}
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+
+{% include header.html %}
+
+{{ content }}
+
+{% include footer.html %}
+{% include scripts.html %}
+</body>
+</html>

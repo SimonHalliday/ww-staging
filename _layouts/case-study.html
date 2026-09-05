@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="section">
+  <div class="crumbs">
+    <a href="{{ '/case-studies/' | relative_url }}">Case Studies</a>
+    <span>/</span>
+    <span class="crumb-here">{{ page.title }}</span>
+  </div>
+
+  <div class="section-header">
+    <div class="section-eyebrow">{{ page.sector | default: 'In The Field' }}{% if page.year %} &middot; {{ page.year }}{% endif %}</div>
+    <h1 class="section-title">{{ page.title }}</h1>
+    {%- if page.standfirst %}<p class="section-desc">{{ page.standfirst }}</p>{% endif %}
+  </div>
+
+  {%- if page.image %}
+  <div class="cs-hero">
+    <img src="{{ '/assets/images/case-studies/' | append: page.image | relative_url }}" alt="{{ page.title | escape }}">
+  </div>
+  {%- endif %}
+
+  <div class="cs-article">
+    {{ content }}
+  </div>
+
+  {%- if page.outcome %}
+  <div class="cs-outcome cs-outcome-block">
+    <div class="cs-label">Outcome</div>
+    <div class="cs-text">{{ page.outcome }}</div>
+  </div>
+  {%- endif %}
+
+  <div class="cat-nav">
+    <a class="cat-chip" href="{{ '/case-studies/' | relative_url }}">&larr; All case studies</a>
+    <a class="cat-chip" href="{{ '/#contact' | relative_url }}">Talk to us about your production</a>
+  </div>
+</div>

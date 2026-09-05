@@ -1,0 +1,26 @@
+---
+layout: default
+title: Case Studies
+description: How Wireless Wizards designs and deploys RF systems on real film, television and live broadcast productions.
+---
+<div class="section">
+  <div class="section-header">
+    <div class="section-eyebrow">In The Field</div>
+    <h1 class="section-title">Case Studies</h1>
+    <p class="section-desc">How the systems come together on real productions &mdash; the problem, the build, and what it delivered on the day.</p>
+  </div>
+
+  {%- assign studies = site.case_studies | where_exp: "s", "s.draft != true" | sort: "date" | reverse %}
+  {%- if studies.size > 0 %}
+  <div class="cs-grid">
+    {%- for s in studies %}
+    {% include case-card.html study=s feature=forloop.first %}
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <div class="empty-note">
+    No case studies published yet. Add a Markdown file to <b>_case_studies/</b>
+    &mdash; see <b>_case_studies/EXAMPLE.md</b> for the format.
+  </div>
+  {%- endif %}
+</div>

@@ -1,0 +1,36 @@
+{%- comment -%}
+One credit card. Pass: include.item
+If the item has an image it fills the card; otherwise a styled card is drawn
+from its colours, icon and card_title.
+{%- endcomment -%}
+<div class="poster-card">
+  <div class="poster-img-wrap broadcast-poster{% if include.item.tv %} poster-tv{% endif %}" style="--bc1:{{ include.item.colors.top }};--bc2:{{ include.item.colors.accent }};--bc3:{{ include.item.colors.bottom }};">
+    {%- if include.item.image %}
+    <img src="{{ '/assets/images/credits/' | append: include.item.image | relative_url }}" alt="{{ include.item.title | escape }}" loading="lazy" class="poster-art" onerror="this.remove()">
+    <div class="bp-rule"></div>
+    <div class="bp-title">{{ include.item.title }}</div>
+    <div class="bp-sub">{{ include.item.meta }}</div>
+    {%- else %}
+      {%- if include.item.svg == 'olympic-rings' %}
+      <div class="bp-rings">
+        <svg viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg" width="90" aria-hidden="true">
+          <circle cx="15" cy="25" r="11" fill="none" stroke="#0085C7" stroke-width="3.5"/>
+          <circle cx="37" cy="25" r="11" fill="none" stroke="#F4C300" stroke-width="3.5"/>
+          <circle cx="59" cy="25" r="11" fill="none" stroke="#009F6B" stroke-width="3.5"/>
+          <circle cx="81" cy="25" r="11" fill="none" stroke="#DF0024" stroke-width="3.5"/>
+          <circle cx="103" cy="25" r="11" fill="none" stroke="#000" stroke-width="3.5"/>
+        </svg>
+      </div>
+      {%- elsif include.item.icon %}
+      <div class="bp-icon" style="font-size:2.5rem;">{{ include.item.icon }}</div>
+      {%- endif %}
+      <div class="bp-title">{{ include.item.card_title | default: include.item.label }}</div>
+      <div class="bp-sub">{{ include.item.card_sub | default: include.item.meta }}</div>
+    {%- endif %}
+    <div class="poster-overlay{% if include.item.tv %} poster-overlay-tv{% endif %}">
+      <div class="poster-overlay-title">{{ include.item.title }}</div>
+      <div class="poster-overlay-meta">{{ include.item.meta }}</div>
+    </div>
+  </div>
+  <div class="poster-label">{{ include.item.label }}</div>
+</div>

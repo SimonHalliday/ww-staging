@@ -1,0 +1,363 @@
+---
+layout: default
+---
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <svg class="hero-signal" width="600" height="600" viewBox="0 0 600 600" fill="none">
+      <circle cx="300" cy="300" r="80" stroke="#e8a020" stroke-width="1"/>
+      <circle cx="300" cy="300" r="140" stroke="#e8a020" stroke-width="1"/>
+      <circle cx="300" cy="300" r="200" stroke="#e8a020" stroke-width="1"/>
+      <circle cx="300" cy="300" r="260" stroke="#e8a020" stroke-width="1"/>
+      <circle cx="300" cy="300" r="290" stroke="#e8a020" stroke-width=".5"/>
+      <line x1="0" y1="300" x2="600" y2="300" stroke="#e8a020" stroke-width=".5"/>
+      <line x1="300" y1="0" x2="300" y2="600" stroke="#e8a020" stroke-width=".5"/>
+      <circle cx="300" cy="300" r="8" fill="#e8a020"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div>
+      <div class="hero-eyebrow fade-up">RF & Wireless Video Solutions</div>
+      <h1 class="hero-headline fade-up fade-up-1">
+        Creating<br><span class="accent">RF</span><br>Magic
+      </h1>
+      <p class="hero-sub fade-up fade-up-2">
+        Specialist RF engineers delivering wireless video transmission for film, television, and live events. Reliable signal. Anywhere. Every time.
+      </p>
+      <div class="hero-ctas fade-up fade-up-3">
+        <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
+        <a href="#contact" class="btn btn-ghost btn-lg">Contact Us</a>
+      </div>
+    </div></div>
+  </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span>▸</span> Wireless Video Transmission</span>
+    <span class="ticker-item"><span>▸</span> Custom RF Design</span>
+    <span class="ticker-item"><span>▸</span> On-Location Support</span>
+    <span class="ticker-item"><span>▸</span> Live Event Coverage</span>
+    <span class="ticker-item"><span>▸</span> Film & Television</span>
+    <span class="ticker-item"><span>▸</span> Signal Integrity</span>
+    <span class="ticker-item"><span>▸</span> COFDM Specialists</span>
+    <span class="ticker-item"><span>▸</span> Frequency Coordination</span>
+    <!-- duplicate for seamless scroll -->
+    <span class="ticker-item"><span>▸</span> Wireless Video Transmission</span>
+    <span class="ticker-item"><span>▸</span> Custom RF Design</span>
+    <span class="ticker-item"><span>▸</span> On-Location Support</span>
+    <span class="ticker-item"><span>▸</span> Live Event Coverage</span>
+    <span class="ticker-item"><span>▸</span> Film & Television</span>
+    <span class="ticker-item"><span>▸</span> Signal Integrity</span>
+    <span class="ticker-item"><span>▸</span> COFDM Specialists</span>
+    <span class="ticker-item"><span>▸</span> Frequency Coordination</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-desc">From single-camera indie shoots to multi-camera broadcast productions, we design and operate bespoke wireless solutions.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">📡</span>
+        <div class="service-name">Wireless Video</div>
+        <div class="service-desc">End-to-end COFDM and SDI wireless video transmission systems. Full HD and 4K solutions for any production environment — studios, location, aerial.</div>
+        <div class="service-tag">Primary Service</div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🎬</span>
+        <div class="service-name">Film & TV</div>
+        <div class="service-desc">On-set RF engineering for feature films, drama series, and documentary productions. We integrate seamlessly with your camera and DIT department.</div>
+        <div class="service-tag">Speciality</div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔴</span>
+        <div class="service-name">Live Events</div>
+        <div class="service-desc">Live broadcast support including sports, concerts, and news. Rapid-deployment systems with real-time monitoring for zero-compromise reliability.</div>
+        <div class="service-tag">Broadcast</div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔧</span>
+        <div class="service-name">RF System Design</div>
+        <div class="service-desc">Custom frequency coordination and RF architecture planning. We survey locations, identify interference risks, and build robust link budgets before a single camera rolls.</div>
+        <div class="service-tag">Consultancy</div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🚁</span>
+        <div class="service-name">Aerial & Long Range</div>
+        <div class="service-desc">Helicopter-mounted transmitter installations with ground-based receive systems, drone downlinks, and long-range point-to-point links for extended or remote shooting locations.</div>
+        <div class="service-tag">Specialist</div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🕸️</span>
+        <div class="service-name">IP Mesh Data Networks</div>
+        <div class="service-desc">Wireless IP mesh systems carrying camera control data across set — focus, iris, run/stop, and remote head control. Reliable low-latency data links that keep your operators in full command wherever the camera is.</div>
+        <div class="service-tag">Data & Control</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- EQUIPMENT (teaser -> /equipment/) -->
+<div id="equipment" class="equipment-section">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Capability</div>
+      <h2 class="section-title">Equipment &amp; Capability</h2>
+      <p class="section-desc">Owned, maintained and built in-house. We spec the system around the production &mdash; not the other way round.</p>
+    </div>
+
+    <div class="equip-grid">
+      {%- for cat in site.data.categories %}
+      {%- assign n = site.equipment | where: "category", cat.slug | where_exp: "i", "i.draft != true" | size %}
+      <a class="equip-card" href="{{ '/equipment/' | append: cat.slug | append: '/' | relative_url }}">
+        <div class="equip-head">
+          <span class="equip-num">{{ forloop.index0 | plus: 1 | prepend: '0' | slice: -2, 2 }} //</span>
+          <div class="equip-name">{{ cat.name }}</div>
+        </div>
+        <div class="equip-desc">{{ cat.summary }}</div>
+        <ul class="equip-list">
+          {%- for p in cat.points %}<li>{{ p }}</li>{% endfor %}
+        </ul>
+        <div class="equip-more">{% if n > 0 %}{{ n }} item{% if n != 1 %}s{% endif %} listed{% else %}View category{% endif %} &rarr;</div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="section">
+    <div class="about-grid">
+      <div>
+        <div class="section-eyebrow">Who We Are</div>
+        <h2 class="section-title">RF Specialists.<br>Production People.</h2>
+
+        <div class="about-kv">
+          <div class="kv-row">
+            <div class="kv">
+              <div class="kv-k">Speciality</div>
+              <div class="kv-v">Wireless Video RF</div>
+            </div>
+            <div class="kv">
+              <div class="kv-k">Status</div>
+              <div class="kv-v good">● Available for Hire</div>
+            </div>
+          </div>
+          <div class="kv-row">
+            <div class="kv">
+              <div class="kv-k">Base</div>
+              <div class="kv-v">United Kingdom</div>
+            </div>
+            <div class="kv">
+              <div class="kv-k">Coverage</div>
+              <div class="kv-v">Worldwide</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-body" style="margin-top: 2rem;">
+          <p>We are a specialist RF company delivering wireless video and data solutions for the film, television, and live broadcast industries. Our expertise spans the full picture — from high-quality wireless video transmission to IP mesh data networks carrying camera control signals including focus, iris, run/stop, and remote head control.</p>
+          <p>Whether we're fitting a transmitter to a helicopter, building a long-range point-to-point link across a location, or keeping every RF channel clean on a 50-camera live broadcast, we bring the same obsessive attention to signal integrity. We integrate seamlessly into your crew, taking the stress out of connectivity so everyone stays focused on the work.</p>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; gap: .75rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-primary">Work With Us</a>
+          <a href="#credits" class="btn btn-ghost">View Credits</a>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="signal-diagram">
+          <span class="diagram-label tl" id="freq-label">FREQ: <span style="color:var(--accent)">—</span></span>
+          <span class="diagram-label tr">LINK: <span style="color:var(--green)" id="link-state">LOCK</span></span>
+          <span class="diagram-label bl">SNR: <span style="color:var(--accent)" id="snr-val">—</span></span>
+          <span class="diagram-label br">BER: <span style="color:var(--green)">1E-9</span></span>
+          <div class="signal-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div>
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Why Wireless Wizards</div>
+      <h2 class="section-title">The Difference</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01 //</div>
+        <div class="why-title">Production Fluency</div>
+        <div class="why-desc">We speak your language — callsheets, camera departments, DITs. We integrate into your crew, not around it.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02 //</div>
+        <div class="why-title">Real-Time Monitoring</div>
+        <div class="why-desc">Bespoke monitoring systems give continuous visibility of every RF link. Continuous visibility of every RF link on set — issues are identified and resolved before they ever impact your shoot.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03 //</div>
+        <div class="why-title">Location-Ready Kit</div>
+        <div class="why-desc">Rugged, portable systems designed for demanding location work — from desert landscapes to urban RF nightmares.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04 //</div>
+        <div class="why-title">Pre-Production Planning</div>
+        <div class="why-desc">We survey locations, coordinate frequencies, and plan RF architecture long before filming begins. No surprises on the day.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05 //</div>
+        <div class="why-title">Trusted Track Record</div>
+        <div class="why-desc">Over 100 industry clients and 20+ years of high-profile productions. We've earned our reputation the hard way.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06 //</div>
+        <div class="why-title">End-to-End Support</div>
+        <div class="why-desc">From first brief to final delivery, we're with you. Design, prep, shoot, and wrap — fully covered.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- CASE STUDIES (teaser -> /case-studies/) -->
+<div id="case-studies">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">In The Field</div>
+      <h2 class="section-title">Case Studies</h2>
+      <p class="section-desc">How the systems come together on real productions &mdash; the problem, the build, and what it delivered on the day.</p>
+    </div>
+
+    {%- assign studies = site.case_studies | where_exp: "s", "s.draft != true" | sort: "date" | reverse %}
+    {%- if studies.size > 0 %}
+    <div class="cs-grid">
+      {%- for s in studies limit: 3 %}
+      {% include case-card.html study=s feature=forloop.first %}
+      {%- endfor %}
+    </div>
+    <div class="cat-nav">
+      <a class="cat-chip" href="{{ '/case-studies/' | relative_url }}">All case studies &rarr;</a>
+    </div>
+    {%- else %}
+    <div class="empty-note">
+      No case studies published yet. Add a file to <b>_case_studies/</b> and it
+      appears here and on the case studies page.
+    </div>
+    {%- endif %}
+  </div>
+</div>
+
+
+<!-- CREDITS -->
+<div id="credits" class="credits-section">
+  <div class="credits-inner">
+    <div class="section-header">
+      <div class="section-eyebrow">Productions</div>
+      <h2 class="section-title">Select Credits</h2>
+      <p class="section-desc">From Hollywood blockbusters to global sporting broadcasts &mdash; seamless signal behind every frame.</p>
+    </div>
+
+    {%- for group in site.data.credits %}
+    {%- assign g = group[1] %}
+    <div class="credits-category-head"{% unless forloop.first %} style="margin-top: 3rem;"{% endunless %}>
+      <span class="credits-cat-label">// {{ g.name }}</span>
+      <div class="credits-cat-line"></div>
+    </div>
+    <div class="poster-grid">
+      {%- for item in g.items %}
+      {% include poster-card.html item=item %}
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+
+    <div class="notice" style="margin-top: 2rem; margin-bottom: 0;">
+      <span>&#8505;</span>
+      <span>This is a selection of our work. <a href="{{ '/#contact' | relative_url }}"><strong>Contact us</strong></a> to discuss your production &mdash; we'd love to be part of it.</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div>
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Let's Talk<br>Wireless</h2>
+      <p class="section-desc" style="margin-bottom: 2.5rem;">Whether you're in pre-production or need urgent on-location support, we want to hear from you.</p>
+
+      <div class="contact-info">
+        <div class="contact-method">
+          <div class="contact-label">Telephone</div>
+          <a class="contact-value" href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a>
+        </div>
+        <div class="contact-method">
+          <div class="contact-label">Email</div>
+          <a class="contact-value" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="contact-method">
+          <div class="contact-label">Follow Us</div>
+          <div class="contact-social">
+            <a class="social-btn" href="{{ site.facebook }}" target="_blank">Facebook</a>
+            <a class="social-btn" href="{{ site.instagram }}" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-head">// New Enquiry</div>
+      <form class="form-body" action="{{ site.form_action }}" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry via wirelesswizards.co.uk">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="{{ '/?sent=1' | absolute_url }}">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div>
+          <label class="flabel" for="name">Name</label>
+          <input class="finput" id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div>
+          <label class="flabel" for="email">Email</label>
+          <input class="finput" id="email" name="email" type="email" placeholder="your@email.com" required>
+        </div>
+        <div>
+          <label class="flabel" for="production">Production / Company</label>
+          <input class="finput" id="production" name="production" type="text" placeholder="Production name or company">
+        </div>
+        <div>
+          <label class="flabel" for="message">Message</label>
+          <textarea class="ftextarea" id="message" name="message" placeholder="Tell us about your project..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">Send Enquiry</button>
+        <div class="form-alt">
+          Or email us directly at
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div id="form-status" style="display:none; font-family:var(--font-mono); font-size:.72rem; color:var(--green); text-align:center; padding:.5rem;">
+          &#10003; Thanks &mdash; your enquiry is on its way. We'll be in touch shortly.
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

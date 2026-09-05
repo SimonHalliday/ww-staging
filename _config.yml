@@ -1,0 +1,39 @@
+# Wireless Wizards — site config
+title: Wireless Wizards
+tagline: RF & Wireless Video for Film & TV
+description: >-
+  Specialist RF engineers delivering wireless video transmission for film,
+  television and live events. Reliable signal. Anywhere. Every time.
+url: "https://simonhalliday.github.io"
+baseurl: "/ww-staging"   # STAGING ONLY — set back to "" for the live repo
+
+email: enquiries@wirelesswizards.co.uk
+phone_display: "+44 793 9188141"
+phone_link: "+447939188141"
+facebook: "https://www.facebook.com/profile.php?id=61573078685522"
+instagram: "https://www.instagram.com/wirelesswizardsrf"
+
+# Where the enquiry form posts. FormSubmit needs activating once by
+# submitting the form and clicking the link it emails you.
+form_action: "https://formsubmit.co/enquiries@wirelesswizards.co.uk"
+
+collections:
+  equipment:
+    output: false          # set to true later to give every item its own page
+    permalink: /equipment/:path/
+  case_studies:
+    output: true
+    permalink: /case-studies/:name/
+
+defaults:
+  - scope: { path: "", type: "case_studies" }
+    values: { layout: "case-study" }
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

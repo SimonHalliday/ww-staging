@@ -1,0 +1,215 @@
+# Production credits. Add an entry and it appears on the home page.
+# image: filename in assets/images/credits/ (optional - without it a styled card is drawn)
+# colors: top / accent / bottom of the card gradient, used when there is no image
+
+film:
+  name: Feature Film
+  items:
+  - label: Isle of Man TT Race
+    title: The Isle of Man Tourist Trophy Race
+    meta: Feature Film · In Production
+    colors:
+      top: '#1a1a1a'
+      accent: '#e8a020'
+      bottom: '#0a0a0a'
+    icon: 🏍️
+    card_title: THE ISLE OF MAN<br>TT RACE
+    card_sub: Coming Soon
+  - label: F.A.S.T.
+    title: F.A.S.T.
+    meta: Feature Film
+    colors:
+      top: '#16222e'
+      accent: '#4fa3d1'
+      bottom: '#070b0f'
+    image: fast.jpg
+  - label: The Thomas Crown Affair
+    title: The Thomas Crown Affair
+    meta: Feature Film
+    colors:
+      top: '#1b1a2e'
+      accent: '#c9a227'
+      bottom: '#08070d'
+    image: the-thomas-crown-affair.jpg
+  - label: The Dog Stars
+    title: The Dog Stars
+    meta: Feature Film
+    colors:
+      top: '#14241f'
+      accent: '#5fae8c'
+      bottom: '#060c0a'
+    image: the-dog-stars.jpg
+  - label: The Odyssey
+    title: The Odyssey
+    meta: 2026 · Warner Bros. Pictures
+    colors:
+      top: '#1d2530'
+      accent: '#c08a3e'
+      bottom: '#080b0f'
+    image: the-odyssey.jpg
+  - label: F1
+    title: F1
+    meta: 2025 · Apple / Warner Bros.
+    colors:
+      top: '#2a0f12'
+      accent: '#e02b2b'
+      bottom: '#0b0405'
+    image: f1.jpg
+  - label: 'Mission: Impossible 8'
+    title: 'Mission: Impossible — Final Reckoning'
+    meta: 2025 · Paramount Pictures
+    colors:
+      top: '#1a1d22'
+      accent: '#d64545'
+      bottom: '#07080a'
+    image: mission-impossible-final-reckoning.jpg
+  - label: 'Mission: Impossible 7'
+    title: 'Mission: Impossible — Dead Reckoning'
+    meta: 2023 · Paramount Pictures
+    colors:
+      top: '#1a1d22'
+      accent: '#e8a020'
+      bottom: '#07080a'
+    image: mission-impossible-dead-reckoning.jpg
+  - label: 'Indiana Jones: Dial of Destiny'
+    title: Indiana Jones & the Dial of Destiny
+    meta: 2023 · Lucasfilm / Disney
+    colors:
+      top: '#251a10'
+      accent: '#c98f3c'
+      bottom: '#0c0806'
+    image: indiana-jones-the-dial-of-destiny.jpg
+  - label: Fountain of Youth
+    title: Fountain of Youth
+    meta: 2025 · Apple Original Films
+    colors:
+      top: '#122320'
+      accent: '#4fb79a'
+      bottom: '#050c0b'
+    image: fountain-of-youth.jpg
+  - label: Jurassic World Dominion
+    title: Jurassic World Dominion
+    meta: 2022 · Universal Pictures
+    colors:
+      top: '#14210f'
+      accent: '#d9a520'
+      bottom: '#060a05'
+    image: jurassic-world-dominion.jpg
+  - label: No Time to Die
+    title: No Time to Die
+    meta: 2021 · Bond / MGM
+    colors:
+      top: '#101318'
+      accent: '#9fb4c9'
+      bottom: '#04060a'
+    image: no-time-to-die.jpg
+  - label: The King's Man
+    title: The King's Man
+    meta: 2021 · 20th Century Studios
+    colors:
+      top: '#26100f'
+      accent: '#c9a227'
+      bottom: '#0c0505'
+    image: the-kings-man.jpg
+  - label: Six Triple Eight
+    title: Six Triple Eight
+    meta: 2024 · Netflix
+    colors:
+      top: '#1f2116'
+      accent: '#b6a05a'
+      bottom: '#0a0b07'
+    image: six-triple-eight.jpg
+television:
+  name: Television
+  items:
+  - label: Sweetpea
+    title: Sweetpea
+    meta: 2024 · Sky Max / Paramount+
+    colors:
+      top: '#1d1226'
+      accent: '#c96fa8'
+      bottom: '#08050c'
+    image: sweetpea.jpg
+    tv: true
+live_broadcast:
+  name: Live Broadcast
+  items:
+  - label: The Olympic Games
+    title: The Olympic Games
+    meta: Multiple editions · Live broadcast
+    colors:
+      top: '#0047AB'
+      accent: '#FFD700'
+      bottom: '#000'
+    svg: olympic-rings
+    card_title: THE OLYMPIC<br>GAMES
+    card_sub: Multiple Editions
+  - label: FIFA World Cup
+    title: FIFA World Cup
+    meta: Multiple tournaments · Live broadcast
+    colors:
+      top: '#8B0000'
+      accent: '#C8963C'
+      bottom: '#1a0000'
+    icon: ⚽
+    card_title: FIFA<br>WORLD CUP
+    card_sub: Multiple Tournaments
+  - label: Rugby World Cup
+    title: Rugby World Cup
+    meta: Multiple tournaments · Live broadcast
+    colors:
+      top: '#003580'
+      accent: '#C8963C'
+      bottom: '#001a40'
+    icon: 🏉
+    card_title: RUGBY<br>WORLD CUP
+    card_sub: Multiple Tournaments
+  - label: The America's Cup
+    title: The America's Cup
+    meta: International sailing · Live broadcast
+    colors:
+      top: '#003087'
+      accent: '#C8001A'
+      bottom: '#00102e'
+    icon: ⛵
+    card_title: THE<br>AMERICA'S<br>CUP
+    card_sub: International Sailing
+  - label: English Premier League
+    title: English Premier League
+    meta: Ongoing · Season broadcasts
+    colors:
+      top: '#3D0099'
+      accent: '#00FF87'
+      bottom: '#1a0044'
+    icon: 🏆
+    card_title: ENGLISH<br>PREMIER<br>LEAGUE
+    card_sub: Season Broadcasts
+  - label: UEFA Champions League
+    title: UEFA Champions League
+    meta: Ongoing · European football
+    colors:
+      top: '#000066'
+      accent: '#C8963C'
+      bottom: '#000022'
+    icon: ⭐
+    card_title: UEFA<br>CHAMPIONS<br>LEAGUE
+    card_sub: European Football
+  - label: ICC T20 Cricket
+    title: ICC T20 Cricket
+    meta: International · Multiple venues
+    colors:
+      top: '#002B5C'
+      accent: '#F5A623'
+      bottom: '#00101a'
+    icon: 🏏
+    card_title: ICC T20<br>CRICKET
+    card_sub: International · Multiple Venues
+  - label: + Many More
+    title: And Many More
+    meta: Ongoing worldwide live broadcast work
+    colors:
+      top: '#1a1a2e'
+      accent: '#e8a020'
+      bottom: '#0a0a14'
+    icon: 📡
+    card_sub: Worldwide Live Broadcast

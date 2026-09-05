@@ -1,0 +1,28 @@
+{%- comment -%} One case study teaser card. Pass: include.study, include.feature {%- endcomment -%}
+<a class="cs-card{% if include.feature %} cs-feature{% endif %}" href="{{ include.study.url | relative_url }}">
+  <div class="cs-media">
+    {%- if include.study.image %}
+    <img src="{{ '/assets/images/case-studies/' | append: include.study.image | relative_url }}" alt="{{ include.study.title | escape }}" loading="lazy">
+    {%- else %}
+    <div class="cs-ph-icon">&#128247;</div>
+    <div class="cs-ph-text">assets/images/case-studies/</div>
+    {%- endif %}
+  </div>
+  <div class="cs-body">
+    <div class="cs-tags">
+      {%- if include.study.sector %}<span class="cs-tag">{{ include.study.sector }}</span>{% endif %}
+      {%- if include.study.year %}<span class="cs-tag">{{ include.study.year }}</span>{% endif %}
+    </div>
+    <div class="cs-title">{{ include.study.title }}</div>
+    {%- if include.study.standfirst %}
+    <div class="cs-block"><div class="cs-text">{{ include.study.standfirst }}</div></div>
+    {%- endif %}
+    {%- if include.study.outcome %}
+    <div class="cs-block cs-outcome">
+      <div class="cs-label">Outcome</div>
+      <div class="cs-text">{{ include.study.outcome }}</div>
+    </div>
+    {%- endif %}
+    <div class="equip-more">Read the case study &rarr;</div>
+  </div>
+</a>

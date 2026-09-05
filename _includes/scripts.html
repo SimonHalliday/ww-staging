@@ -1,0 +1,52 @@
+<script>
+// Theme toggle
+function toggleTheme() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  const next = isLight ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  document.getElementById('theme-btn').textContent = next === 'light' ? '☀️' : '🌙';
+  try { localStorage.setItem('ww_theme', next); } catch(e) {}
+}
+(function() {
+  const t = localStorage.getItem('ww_theme') || 'dark';
+  if (t === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById('theme-btn').textContent = '☀️';
+  }
+})();
+
+// Fake live signal readout
+const freqs = ['2205 MHz','2225 MHz','2245 MHz','2265 MHz','2285 MHz'];
+const snrs  = ['28.4 dB','31.2 dB','29.7 dB','33.1 dB','27.9 dB'];
+let fi = 0, si = 0;
+function updateDiagram() {
+  const fl = document.getElementById('freq-label');
+  const sv = document.getElementById('snr-val');
+  if (fl) fl.innerHTML = 'FREQ: <span style="color:var(--accent)">' + freqs[fi % freqs.length] + '</span>';
+  if (sv) sv.textContent = snrs[si % snrs.length];
+  fi++; si++;
+}
+updateDiagram();
+setInterval(updateDiagram, 2800);
+
+// Form submit
+// Show the confirmation banner when FormSubmit redirects back with ?sent=1
+(function () {
+  try {
+    if (new URLSearchParams(location.search).get('sent') === '1') {
+      var s = document.getElementById('form-status');
+      if (s) { s.style.display = 'block'; s.scrollIntoView({block:'center'}); }
+      history.replaceState(null, '', location.pathname);
+    }
+  } catch (e) {}
+})();
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>

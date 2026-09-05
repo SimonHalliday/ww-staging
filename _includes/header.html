@@ -1,0 +1,18 @@
+<header>
+  <a class="h-logo" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Wireless Wizards logo">
+    <div class="hdiv"></div>
+    <span class="h-title">Wireless <span>Wizards</span></span>
+  </a>
+
+  <nav>
+    {%- for item in site.data.nav %}
+    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+    {%- endfor %}
+  </nav>
+
+  <div class="h-actions">
+    <button class="btn-icon" id="theme-btn" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle light or dark theme">&#127769;</button>
+    <a href="{{ '/#contact' | relative_url }}" class="btn btn-primary">Get In Touch</a>
+  </div>
+</header>
