@@ -1331,3 +1331,21 @@ a.cs-card { text-decoration: none; color: inherit; }
   .equip-chip { padding: .6rem .8rem; }
   .equip-chip-name { font-size: .9rem; }
 }
+
+/* ------------------------------------------------------------------
+   Hero: the background photo and its overlay are hardcoded dark in
+   both themes, so text sitting on top of it must stay light too.
+   Re-declaring the dark tokens on .hero scopes them to that subtree,
+   so the headline, sub, eyebrow and buttons all inherit correctly
+   without needing a rule each.
+   ------------------------------------------------------------------ */
+.hero {
+  --text:        #b0c0d4;
+  --text-bright: #dce8f6;
+  --text-dim:    #8a9ab5;
+  --accent:      #e8a020;
+  --border:      #1a2235;
+  --border-l:    #3a4a68;
+  --bg-card:     #0c0f18;
+  --bg-input:    #10141f;
+}
